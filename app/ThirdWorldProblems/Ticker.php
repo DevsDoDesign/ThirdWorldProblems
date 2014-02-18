@@ -10,19 +10,19 @@ class Ticker {
 			'tags' => ['death']
 		],
 		[
-			'el' => '<div class="block-card"><h1 class="card-intro">Oprah has made $</h1><p class="card-counter" id="oprah">1</p><h1 class="card-insult"> since you got here, pauper.</h1></div>',
+			'el' => '<div class="block-card"><h1 class="card-intro">Since you have been here, Oprah has made $</h1><p class="card-counter" id="oprah">1</p><h1 class="card-insult"> since you got here, pauper.</h1></div>',
 			'increment' => 0.9,
 			'interval' => 100,
 			'tags' => ['oprah', 'rich', 'money']
 		],
 		[
-			'el' => '<div class="block-card"><h1 class="card-intro">The guy who caused the banks to crash, makes £39 per minute on his pension. That\'s £</h1><p class="card-counter" id="fred">1</p><h1 class="card-insult"> since you loaded the page</h1></div>',
+			'el' => '<div class="block-card"><h1 class="card-intro">Fred the Shred, makes £39 per minute on his pension. That\'s £</h1><p class="card-counter" id="fred">1</p><h1 class="card-insult"> since you loaded the page</h1></div>',
 			'increment' => 0.065,
 			'interval' => 100,
 			'tags' => ['fred', 'money', 'rich']
 		],
 		[
-			'el' => '<div class="block-card"><h1 class="card-intro">Since you\'ve been reading, this many people have got divored</h1><p class="card-counter" id="divorce">1</p><h1 class="card-insult">Being single doesn\' look so bad now does it?</h1></div>',
+			'el' => '<div class="block-card"><h1 class="card-intro">Since you\'ve been reading, this many people have got divorced</h1><p class="card-counter" id="divorce">1</p><h1 class="card-insult">Being single doesn\' look so bad now does it?</h1></div>',
 			'increment' => 0.2,
 			'interval' => 1300,
 			'tags' => ['divorce']
