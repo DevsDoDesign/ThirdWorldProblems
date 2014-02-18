@@ -50,7 +50,7 @@ var runDe = function() {
 		de += 1;
 		$de.text(de);
 	};
-	setInterval(ticker, 2000);
+	setInterval(ticker, 5000);
 };
 
 var runFred = function() {
