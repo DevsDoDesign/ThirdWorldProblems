@@ -34,10 +34,20 @@ var runHiv = function() {
 	};
 	setInterval(ticker, 6600);
 };
+
+var runJustin = function() {
+	var justin = 0, $justin = $('#justin');
+	var ticker = function() {
+		justin += 1;
+		$justin.text(justin);
+	};
+	setInterval(ticker, 2000);
+};
 	
 $(function() {
 	runDeaths();
 	runOprah();
 	runDivorce();
 	runHiv();
+	runJustin();
 });

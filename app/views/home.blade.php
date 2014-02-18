@@ -8,4 +8,6 @@ Hello!
 
 <p><span id="hiv">0</span> have been diagnosed with HIV. Wear a condom, dickhead.</p>
 
+<p>Justin beiber gains <span id="justin">0</span> followers. And he's still not dead.</p>
+
 @include('_app')
