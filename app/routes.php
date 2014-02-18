@@ -26,3 +26,12 @@ Route::get('/', function()
 {
 	return View::make('home');
 });
+
+Route::post('/weather', function() {
+	$loc = [
+		'lat' => Input::get('lat'),
+		'lng' => Input::get('lng'),
+	];
+
+	return App::make('ThirdWorldProblems\IWeather')->weatherInLocation($loc);
+});
