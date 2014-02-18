@@ -14,6 +14,10 @@ window.ExtractData = (function() {
 			{
 				name: 'food',
 				regex: /(\s|^)(food|hungry|thirsty)/gi
+			},
+			{
+				name: 'sick',
+				regex: /(\s|^)(sick|ill)/gi
 			}
 		];
 
