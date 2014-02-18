@@ -2,12 +2,17 @@ $(function() {
 
 	var BackView = Backbone.View.extend({
 		template: function(data) {
-			// var w = data.category ? data.category.name+' ' : '';
-			// if (data.weather) {
-			// 	w += 'In '+data.weather.city+' it\'s '+data.weather.weather;
-			// }
+			var w = data.category ? data.category.name+' ' : '';
+			if (data.weather) {
+				w += 'In '+data.weather.city+' it\'s '+data.weather.weather;
+			}
 			// return 'Something... '+w;
-			return $('#t-flip').html();
+			var template = $('#t-flip').html();
+			return _.template(template, {
+				problem: data.text,
+				weather: data.weather,
+				category: data.category ? data.category.name : null
+			});
 		},
 		render: function(data) {
 			this.$el.append(this.template(data));

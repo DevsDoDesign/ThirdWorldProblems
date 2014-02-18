@@ -32,7 +32,7 @@
 		<div class="block-submitted">
 			<div class="dotted-wrapper">
 				<div class="hero-submitted">
-					<p class="submitted-quote">&ldquo;I've spilt humous &rdquo;</p>
+					<p class="submitted-quote">&ldquo;<%= problem %>&rdquo;</p>
 				</div> 
 			</div>
 		</div>
