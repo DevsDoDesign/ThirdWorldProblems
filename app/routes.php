@@ -13,10 +13,15 @@ App::bind('ThirdWorldProblems\IWeather', 'ThirdWorldProblems\FakeWeather');
 |
 */
 
-Route::get('/', function()
+Route::get('/data', function()
 {
 	return [
 		App::make('ThirdWorldProblems\IWeather')->weatherInLocation('Foo'),
 		App::make('ThirdWorldProblems\Morbid')->one(),
 	];
+});
+
+Route::get('/', function()
+{
+	return View::make('home');
 });
