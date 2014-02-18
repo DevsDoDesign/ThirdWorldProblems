@@ -44,6 +44,15 @@ var runJustin = function() {
 	setInterval(ticker, 2000);
 };
 
+var runDe = function() {
+	var de = 0, $de = $('#de');
+	var ticker = function() {
+		de += 1;
+		$de.text(de);
+	};
+	setInterval(ticker, 2000);
+};
+
 var runFred = function() {
 	var made = 0, $oprah = $('#fred');
 	var ticker = function() {
@@ -60,4 +69,5 @@ $(function() {
 	runHiv();
 	runJustin();
 	runFred();
+	runDe();
 });
