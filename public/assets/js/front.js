@@ -16,7 +16,11 @@ $(function() {
 		},
 		render: function(data) {
 			this.$el.append(this.template(data));
+			_.defer(this.afterRender.bind(this));
 			return this;
+		},
+		afterRender: function() {
+			console.debug('foo');
 		}
 	});
 
