@@ -22,7 +22,13 @@ $(function() {
 			return this;
 		},
 		afterRender: function() {
-			// console.debug('foo');
+			runDeaths();
+			runOprah();
+			runDivorce();
+			runHiv();
+			runJustin();
+			runFred();
+			runDe();
 		}
 	});
 
@@ -50,7 +56,7 @@ $(function() {
 		$wrap.empty();
 		var foundTickers = [];
 		while (_.keys(foundTickers).length < 3) {
-			var random = _.random(1, 5);
+			var random = _.random(1, 4);
 			foundTickers[random] = Tickers[random];
 		}
 

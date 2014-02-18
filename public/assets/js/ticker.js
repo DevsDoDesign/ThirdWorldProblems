@@ -12,7 +12,7 @@ var runOprah = function() {
 	var oprahMade = 0, $oprah = $('#oprah');
 	var ticker = function() {
 		oprahMade += .9;
-		$oprah.text(oprahMade.toFixed(2));
+		$oprah.text('$'+oprahMade.toFixed(2));
 	};
 	setInterval(ticker, 100);
 };
@@ -57,17 +57,17 @@ var runFred = function() {
 	var made = 0, $oprah = $('#fred');
 	var ticker = function() {
 		made += .065;
-		$oprah.text(made.toFixed(2));
+		$oprah.text('£'+made.toFixed(2));
 	};
 	setInterval(ticker, 100);
 };
 	
 $(function() {
-	runDeaths();
-	runOprah();
-	runDivorce();
-	runHiv();
-	runJustin();
-	runFred();
-	runDe();
+	// runDeaths();
+	// runOprah();
+	// runDivorce();
+	// runHiv();
+	// runJustin();
+	// runFred();
+	// runDe();
 });
