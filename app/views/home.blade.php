@@ -48,11 +48,16 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, dolores, minus perspiciatis suscipit harum quam ipsum omnis quos obcaecati tempore dignissimos aperiam facere dicta dolor fuga et dolorem eaque facilis.</p>
 		</div>
 		<div class="block-cards">
-			<div class="block-card">
-				<h1 class="card-intro">Justin Beiber has gained this many followers</h1>
-				<p class="card-counter">25</p>
-				<h1 class="card-insult">Don't you wish you were this popular?</h1>
-			</div>
+
+			<% _.each(tickers, function(ticker) { %>
+				<div class="block-card">
+					<h1 class="card-intro">Justin Beiber has gained this many followers</h1>
+					<p class="card-counter">25</p>
+					<h1 class="card-insult">Don't you wish you were this popular?</h1>
+				</div>	
+			<% }); %>
+
+			
 			<div class="block-card">
 				<h1 class="card-intro">Justin Beiber has gained this many followers</h1>
 				<p class="card-counter">25</p>
