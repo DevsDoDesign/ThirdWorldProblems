@@ -1,5 +1,6 @@
 <?php
 
+// App::bind('ThirdWorldProblems\IWeather', 'ThirdWorldProblems\WeatherMapWeather');
 App::bind('ThirdWorldProblems\IWeather', 'ThirdWorldProblems\FakeWeather');
 
 /*
@@ -16,7 +17,7 @@ App::bind('ThirdWorldProblems\IWeather', 'ThirdWorldProblems\FakeWeather');
 Route::get('/data', function()
 {
 	return [
-		App::make('ThirdWorldProblems\IWeather')->weatherInLocation('Foo'),
+		App::make('ThirdWorldProblems\IWeather')->weatherInLocation('London'), // ['lat' => x, 'lng' => x] or just city name
 		App::make('ThirdWorldProblems\Morbid')->one(),
 	];
 });

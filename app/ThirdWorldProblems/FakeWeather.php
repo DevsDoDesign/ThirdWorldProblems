@@ -8,7 +8,12 @@ class FakeWeather implements IWeather {
 
 	function weatherInLocation($location)
 	{
-		return $this->weather[array_rand($this->weather, 1)];
+		return [
+			'city' => 'Portsmouth',
+			'temperature' => 282.45,
+			'humidity' => 84,
+			'weather' => $this->weather[array_rand($this->weather, 1)],
+		];
 	}
 
 }
