@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="height:100%;">
 <head>
 	<meta charset="UTF-8">
 	<title>First World Problems</title>
