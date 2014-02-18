@@ -15,5 +15,8 @@ App::bind('ThirdWorldProblems\IWeather', 'ThirdWorldProblems\FakeWeather');
 
 Route::get('/', function()
 {
-	return App::make('ThirdWorldProblems\IWeather')->weatherInLocation('Foo');
+	return [
+		App::make('ThirdWorldProblems\IWeather')->weatherInLocation('Foo'),
+		App::make('ThirdWorldProblems\Morbid')->one(),
+	];
 });
