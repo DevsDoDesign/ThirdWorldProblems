@@ -1,6 +1,6 @@
 <?php namespace ThirdWorldProblems;
 
-class Morbid {
+class Ticker {
 
 	protected $tickers = [
 		[
@@ -50,6 +50,11 @@ class Morbid {
 	function one_rand()
 	{
 		return $this->tickers[array_rand($this->tickers, 1)];
+	}
+
+	function all()
+	{
+		return $this->tickers;
 	}
 
 }

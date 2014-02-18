@@ -24,7 +24,9 @@ Route::get('/data', function()
 
 Route::get('/', function()
 {
-	return View::make('home');
+	return View::make('home', [
+		'tickers' => json_encode(App::make('ThirdWorldProblems\Ticker')->all())
+	]);
 });
 
 Route::get('/tickers', function()

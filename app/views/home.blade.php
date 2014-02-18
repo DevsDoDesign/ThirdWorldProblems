@@ -28,6 +28,10 @@
 		</div>
 	</section>
 
+	<script id="ticker-strings">
+		var Tickers = {{$tickers}};
+	</script>
+
 	<script id="t-flip" type="text/template">
 		<div class="block-submitted">
 			<div class="dotted-wrapper">
