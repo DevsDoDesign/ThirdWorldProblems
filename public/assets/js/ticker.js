@@ -20,10 +20,10 @@ var runOprah = function() {
 var runDivorce = function() {
 	var divorces = 2, $divorce = $('#divorce');
 	var ticker = function() {
-		divorces += 2;
-		$divorce.text(divorces);
+		divorces += .2;
+		$divorce.text(parseInt(divorces, 10));
 	};
-	setInterval(ticker, 13000);
+	setInterval(ticker, 1300);
 };
 
 var runHiv = function() {
