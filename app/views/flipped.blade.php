@@ -14,29 +14,28 @@
 				</div> 
 			</div>
 		</div>
-		<div class="block-news-headline">
-			<h2><a href="http://www.telegraph.co.uk/news/worldnews/europe/denmark/10626958/Danish-zoo-shoots-giraffe-and-feeds-carcass-to-carnivores.html" style="color:black;text-decoration:none;">The Danes are slaughtering giraffes to entertain children. Is your problem really as bad as giraffe corpses? Thought not. Now shut your trap, dick.</a></h2>
-			<br><br>
+		<div class="block-news-headline" style="background:#463E35;margin-top:15px;">
+			<h2 class="block-news-headline-title"><a href="http://www.telegraph.co.uk/news/worldnews/europe/denmark/10626958/Danish-zoo-shoots-giraffe-and-feeds-carcass-to-carnivores.html" style="color:white;text-decoration:none;">The Danes are slaughtering giraffes to entertain children. Is your problem really as bad as giraffe corpses? Thought not. Now shut your trap, dick.</a></h2>
 		</div>
 		<div class="block-cards">
-			<div class="block-card">
+			<div class="block-card block-card-first">
 				<h1 class="card-intro">Since you've been reading, this many people have died</h1>
 				<p class="card-counter" id="deaths">1</p>
-				<h1 class="card-insult">So shut your fucking moaning, and get on with life!</h1>
+				<h1 class="card-insult">So shut your moaning, and get on with life!</h1>
 			</div>
-			<div class="block-card">
+			<div class="block-card block-card-second">
 				<h1 class="card-intro">Justin Beiber has gained this many fans since</h1>
 				<p class="card-counter" id="justin">1</p>
 				<h1 class="card-insult">Don't you wish someone loved <strong>you</strong> that much?</h1>
 			</div>
-			<div class="block-card">
+			<div class="block-card block-card-third">
 				<h1 class="card-intro">Dan Edwards, Young Designer of the Year has had</h1>
 				<p class="card-counter" id="de">1</p>
 				<h1 class="card-insult">spam mentions on Twitter since you got here.</h1>
 			</div>
 		</div>
 		<div class="death-count">
-			<p>Isn't it interesting how every time someone follows Justin Bieber, someone dies?</p>
+			<p style="width:100%;">Isn't it interesting how every time someone follows Justin Bieber, someone dies?</p>
 		</div>
 	</section>
 

@@ -30,6 +30,14 @@
 		</div>
 	</section>
 
+	<div class="get-a-grip-overlay">
+		<div class="projector-container">
+			<h1 class="people-have-died"><span>15 People</span> have died</h1>
+			<h1>whilst you've been worrying about your problem</h1>
+			<h1 class="get-a-grip">get a grip</h1>
+		</div>
+	</div>
+
 	<script id="ticker-strings">
 		var Tickers = {{$tickers}};
 		var Morbid = {{$morbid}};
@@ -50,8 +58,10 @@
 			<h2 class="block-news-headline-title"><a href="<%= headline.url %>" style="color: #fff; text-decoration: none;"><%= headline.head %></a></h2>
 		</div>
 		<div class="block-cards">
+			<% var i = 0; %>
 			<% _.each(tickers, function(ticker) { %>
-				<div class="block-card block-card-first">
+				<% i++; %>
+				<div class="block-card <%= (i == 1) ? 'block-card-first' : (i == 2) ? 'block-card-second' : 'block-card-third' %>">
 					<h1 class="card-intro"><%= ticker.beforeText %></h1>
 					<p class="card-counter" id="<%= ticker.id %>">1</p>
 					<h1 class="card-insult" style="min-height: 76px;"><%= ticker.afterText %></h1>
@@ -60,7 +70,8 @@
 
 		</div>
 		<div class="death-count">
-			<p>By the way<span id="deaths">1</span> people have died whilst you have been reading this</p>
+			<p>People are dying whilst you are bitching about your first world problem</p>
+			<p class="death-count-number" id="deaths">1</p>
 		</div>
 	</script>
 

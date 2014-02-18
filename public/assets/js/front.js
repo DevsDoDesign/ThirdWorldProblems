@@ -99,13 +99,25 @@ $(function() {
 
 	var fixHeights = function() {
 		var height = 0;
-		$('.block-card-first .card-intro').each(function() {
+		$('.block-card .card-intro').each(function() {
 			height = $(this).height() > height ? $(this).height() : height;
 		});
-		$('.block-card-first .card-intro').each(function() {
+		$('.block-card .card-intro').each(function() {
+			$(this).height(height);
+		});
+
+		height = 0;
+		$('.card-insult').each(function() {
+			height = $(this).height() > height ? $(this).height() : height;
+		});
+		$('.card-insult').each(function() {
 			$(this).height(height);
 		});
 	};
+
+	setTimeout(function() {
+		$('.get-a-grip-overlay').addClass('visible');
+	}, 30000);
 
 
 });
