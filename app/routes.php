@@ -43,3 +43,15 @@ Route::post('/weather', function() {
 
 	return App::make('ThirdWorldProblems\IWeather')->weatherInLocation($loc);
 });
+
+Route::post('/sweatshop', function() {
+	$data = [ 'text' => Crypt::encrypt(Input::get('text')) ];
+	Mail::send('emails.results', $data, function($mail) {
+		$mail->to('someone@danharper.me');
+	});
+});
+
+Route::get('/results/{text}', function($text) {
+	$text = Crypt::decrypt($text);
+	return View::make('flipped', ['text' => $text]);
+});

@@ -26,6 +26,24 @@ $(function() {
 
 	var $wrap = $('#wrap');
 
+	var sendItToTheSweatshop = function(text, category) {
+		var data = {
+			text: text,
+			category: category
+		};
+
+		$.post('/sweatshop', data).then(function() {
+			$wrap.empty();
+			$wrap.html('<div class="block-submitted">\
+				<div class="dotted-wrapper">\
+					<div class="hero-submitted">\
+						<p class="submitted-quote">Thanks, we\'ll get back to you!</p>\
+					</div>\
+				</div>\
+			</div>');
+		});
+	};
+
 	var flipIt = function(text, category) {
 		$wrap.empty();
 		var tickers = [];
@@ -52,7 +70,13 @@ $(function() {
 		var text = $('textarea').val().trim();
 		if ( ! text) return alert("Enter something then, knob");
 		var category = ExtractData.extract(text);
-		flipIt(text, category);
+
+		if ($('#decision-s').is(':checked')) {
+			sendItToTheSweatshop(text, category);
+		}
+		else {
+			flipIt(text, category);
+		}
 	});
 
 
