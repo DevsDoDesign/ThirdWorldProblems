@@ -65,18 +65,26 @@ $(function() {
 
 	$('textarea').autogrow();
 
-	$('#submitBtn').click(function(e) {
+	var outData = function(callback) {
+		var text = $('textarea').val().trim();
+		if ( ! text) return alert("Enter something then, knob");
+		var category = ExtractData.extract(text);
+		callback(text, category);
+	};
+
+	$('#mechanicalSubmit').click(function(e) {
+		e.preventDefault();
+
+		outData(flipIt);
+	});
+
+	$('#sweatshopSubmit').click(function(e) {
 		e.preventDefault();
 		var text = $('textarea').val().trim();
 		if ( ! text) return alert("Enter something then, knob");
 		var category = ExtractData.extract(text);
 
-		if ($('#decision-s').is(':checked')) {
-			sendItToTheSweatshop(text, category);
-		}
-		else {
-			flipIt(text, category);
-		}
+		outData(sendItToTheSweatshop);
 	});
 
 

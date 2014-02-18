@@ -15,13 +15,17 @@
 					<h1 class="problem">problem</h1>
 				</div>
 				<textarea name="" id="" style="height:38px !important; font-size:.8em;"></textarea>
-				<label for="decision-m">
-					Mechanical <input type="radio" id="decision-m" name="decision" value="mechanical">
-				</label>
-				<label for="decision-s">
-					Sweatshop <input type="radio" id="decision-s" name="decision" value="sweatshop">
-				</label>
-				<a class="button" href="" id="submitBtn">Submit</a>
+				<div style="overflow:hidden;">
+					<!-- LOL, devs do design!. cba to fuck with Ed's SASS as he's rewriting it all... -->
+					<div style="width:48%;float:left;margin-right:4%;">
+						<a class="button" href="" id="mechanicalSubmit">Mechanical</a>
+					</div><div style="width:48%;float:left;">
+						<a class="button" href="" id="sweatshopSubmit">Sweatshop*</a>
+					</div>
+				</div>
+				<p style="font-size:.7em;color:#999;margin-top:1em;text-align:right;">
+					*100% Poverty Guaranteed&trade;
+				</p>
 			</div>
 		</div>
 	</section>
