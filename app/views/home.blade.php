@@ -30,6 +30,7 @@
 
 	<script id="ticker-strings">
 		var Tickers = {{$tickers}};
+		var Morbid = {{$morbid}};
 	</script>
 
 	<script id="t-flip" type="text/template">
