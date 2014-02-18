@@ -42,6 +42,15 @@ var runJustin = function() {
 		$justin.text(justin);
 	};
 	setInterval(ticker, 2000);
+});
+
+var runFred = function() {
+	var made = 0, $oprah = $('#fred');
+	var ticker = function() {
+		made += .065;
+		$oprah.text(made.toFixed(2));
+	};
+	setInterval(ticker, 100);
 };
 	
 $(function() {
@@ -50,4 +59,5 @@ $(function() {
 	runDivorce();
 	runHiv();
 	runJustin();
+	runFred();
 });
