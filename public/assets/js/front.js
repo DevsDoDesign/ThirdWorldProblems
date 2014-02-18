@@ -11,7 +11,8 @@ $(function() {
 			return _.template(template, {
 				problem: data.text,
 				weather: data.weather,
-				category: data.category ? data.category.name : null
+				category: data.category ? data.category.name : null,
+				tickers: data.tickers
 			});
 		},
 		render: function(data) {
