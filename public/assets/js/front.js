@@ -28,6 +28,14 @@ $(function() {
 
 	var flipIt = function(text, category) {
 		$wrap.empty();
+		var tickers = [];
+		while(tickers.length < 3) {
+			var random = Math.ceil(Math.random()*5);
+			var found = false;
+			if (tickers.indexOf(random) == -1 && random !== 0) {
+				tickers[tickers.length] = random;
+			}
+		}
 		var data = {
 			text: text,
 			category: category,
