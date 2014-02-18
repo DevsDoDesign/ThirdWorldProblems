@@ -1,0 +1,19 @@
+{
+  "name": "first-world-problems",
+  "description": "First World Problems",
+  "version": "0.1.0",
+  "homepage": "http://devsdodesign.com",
+  "author": {
+    "name": "Devs Do Design",
+    "url": "http://devsdodesign.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/danharper/first-world-problems.git"
+  },
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-watch": "0.3.1",
+    "grunt-sass": "~0.10.0"
+  }
+}

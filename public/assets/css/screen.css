@@ -1,0 +1,130 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* VARIABLES */
+/* Styles */
+body {
+  background-color: #1C1F26;
+  background: #2A5D76;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300; }
+
+section {
+  max-width: 600px;
+  margin: 0 auto; }
+
+.block {
+  margin: 50px 80px;
+  background-color: #D2DADD;
+  padding: 10px;
+  border-radius: 3px; }
+
+.hero {
+  padding: 30px; }
+
+.dotted-wrapper {
+  border: 2px dashed #BBC3C6;
+  padding: 20px; }
+
+.submit-your {
+  font-family: georgia;
+  color: #111317;
+  font-weight: 300;
+  font-size: 32px;
+  margin: 5px 0; }
+
+.first-world {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  color: #1C1F26;
+  margin-left: 9px; }
+
+.problem {
+  font-family: georgia;
+  color: #16181d;
+  font-size: 40px;
+  margin: 5px 0;
+  font-weight: bold; }
+
+h1 {
+  color: #7ABA57;
+  text-transform: uppercase;
+  text-align: center; }
+
+textarea {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #515759;
+  background-color: #393D3E;
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px; }
+  textarea:focus {
+    outline: none; }
+
+.button {
+  text-align: center;
+  border-radius: 2px;
+  background: #76b852;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #87c168), color-stop(100%, #76b852));
+  background: -webkit-linear-gradient(top, #87c168 0, #76b852 100%);
+  background: -ms-linear-gradient(top, #87c168 0, #76b852 100%);
+  background: linear-gradient(top, #87c168 0, #76b852 100%);
+  border: 1px solid #63a042;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  display: block;
+  padding: 15px 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px; }
+  .button:hover {
+    background: #84bf64;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #93c776), color-stop(100%, #76b852));
+    background: -webkit-linear-gradient(top, #93c776 0, #84bf64 100%);
+    background: -ms-linear-gradient(top, #93c776 0, #84bf64 100%);
+    background: linear-gradient(top, #93c776 0, #84bf64 100%);
+    border: 1px solid #63a042;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
