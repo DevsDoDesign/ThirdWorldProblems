@@ -11,10 +11,10 @@ var runDeaths = function() {
 var runOprah = function() {
 	var oprahMade = 0, $oprah = $('#oprah');
 	var ticker = function() {
-		oprahMade += 9;
-		$oprah.text(oprahMade);
+		oprahMade += .9;
+		$oprah.text(oprahMade.toFixed(2));
 	};
-	setInterval(ticker, 1000);
+	setInterval(ticker, 100);
 };
 
 var runDivorce = function() {
