@@ -56,6 +56,15 @@ $(function() {
 	var flipIt = function(text, category) {
 		$wrap.empty();
 		var foundTickers = [];
+
+		var extracted = ExtractData.extract(text);
+		if (extracted) {
+			_.each(Tickers, function(ticker, index) {
+				if (ticker.tags.indexOf(extracted.name) !== -1)
+					foundTickers[index] = ticker;
+			});
+		}
+
 		while (_.keys(foundTickers).length < 3) {
 			var random = _.random(1, 4);
 			foundTickers[random] = Tickers[random];
