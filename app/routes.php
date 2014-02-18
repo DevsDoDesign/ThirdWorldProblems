@@ -24,7 +24,15 @@ Route::get('/data', function()
 
 Route::get('/', function()
 {
-	return View::make('home');
+	return View::make('home', [
+		'tickers' => json_encode(App::make('ThirdWorldProblems\Ticker')->all()),
+		'morbid' => json_encode(App::make('ThirdWorldProblems\Morbid')->all())
+	]);
+});
+
+Route::get('/tickers', function()
+{
+	return View::make('tickers');
 });
 
 Route::post('/weather', function() {
@@ -34,4 +42,16 @@ Route::post('/weather', function() {
 	];
 
 	return App::make('ThirdWorldProblems\IWeather')->weatherInLocation($loc);
+});
+
+Route::post('/sweatshop', function() {
+	$data = [ 'text' => Crypt::encrypt(Input::get('text')) ];
+	Mail::send('emails.results', $data, function($mail) {
+		$mail->to('someone@danharper.me');
+	});
+});
+
+Route::get('/results/{text}', function($text) {
+	$text = Crypt::decrypt($text);
+	return View::make('flipped', ['text' => $text]);
 });

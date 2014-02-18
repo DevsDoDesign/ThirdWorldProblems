@@ -1,7 +1,9 @@
 (function() {
 
+
 	var gotWeather = function(weather) {
-		alert('In '+weather.city+' it\'s '+weather.weather);
+		window.TheWeather = weather;
+		// alert('In '+weather.city+' it\'s '+weather.weather);
 	};
 
 	navigator.geolocation.getCurrentPosition(function(location) {

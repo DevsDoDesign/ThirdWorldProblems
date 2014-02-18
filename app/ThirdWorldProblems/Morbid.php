@@ -58,4 +58,9 @@ class Morbid {
 		return $this->news[array_rand($this->news, 1)];
 	}
 
+	function all()
+	{
+		return $this->news;
+	}
+
 }

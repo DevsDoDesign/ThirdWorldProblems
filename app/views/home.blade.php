@@ -1,15 +1,75 @@
-Hello!
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>First World Problems</title>
+	<link rel="stylesheet" href="/assets/css/screen.css">
+</head>
+<body>
+	<section id="wrap">
+		<div class="block">
+			<div class="dotted-wrapper">
+				<div class="hero">
+					<h1 class="submit-your">Submit Your</h1>
+					<h1 class="first-world">First World</h1>
+					<h1 class="problem">problem</h1>
+				</div>
+				<textarea name="" id="" style="height:38px !important; font-size:.8em;"></textarea>
+				<div style="overflow:hidden;">
+					<!-- LOL, devs do design!. cba to fuck with Ed's SASS as he's rewriting it all... -->
+					<div style="width:48%;float:left;margin-right:4%;">
+						<a class="button" href="" id="mechanicalSubmit">Mechanical</a>
+					</div><div style="width:48%;float:left;">
+						<a class="button" href="" id="sweatshopSubmit">Sweatshop*</a>
+					</div>
+				</div>
+				<p style="font-size:.7em;color:#999;margin-top:1em;text-align:right;">
+					*100% Poverty Guaranteed&trade;
+				</p>
+			</div>
+		</div>
+	</section>
 
-<p><span id="deaths">0</span> people have died since you read this, you fuckwit.</p>
+	<script id="ticker-strings">
+		var Tickers = {{$tickers}};
+		var Morbid = {{$morbid}};
+	</script>
 
-<p>Oprah has made $<span id="oprah">0</span> since you got here, pauper.</p>
+	<script id="t-flip" type="text/template">
+		<div class="block-submitted">
+			<div class="dotted-wrapper">
+				<div class="hero-submitted">
+					<p class="submitted-quote">&ldquo;<%= problem %>&rdquo;</p>
+				</div> 
+			</div>
+		</div>
+		<div class="block-news-headline">
+			<h2>Killer eats monkey on top of eiffel tower</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, dolores, minus perspiciatis suscipit harum quam ipsum omnis quos obcaecati tempore dignissimos aperiam facere dicta dolor fuga et dolorem eaque facilis.</p>
+		</div>
+		<div class="block-cards">
+			<div class="block-card">
+				<h1 class="card-intro">Justin Beiber has gained this many followers</h1>
+				<p class="card-counter">25</p>
+				<h1 class="card-insult">Don't you wish you were this popular?</h1>
+			</div>
+			<div class="block-card">
+				<h1 class="card-intro">Justin Beiber has gained this many followers</h1>
+				<p class="card-counter">25</p>
+				<h1 class="card-insult">Don't you wish you were this popular?</h1>
+			</div>
+			<div class="block-card">
+				<h1 class="card-intro">Justin Beiber has gained this many followers</h1>
+				<p class="card-counter">25</p>
+				<h1 class="card-insult">Don't you wish you were this popular?</h1>
+			</div>
+		</div>
+		<div class="death-count">
+			<p>By the way<span>24</span> people have died whilst you have been reading this</p>
+		</div>
+	</script>
 
-<p>The guy who caused the banks to crash, makes £39 <strong>per minute</strong> on his pension. That's £<span id="fred">0</span> since you loaded this page.</p>
+	@include('_app')
 
-<p><span id="divorce">2</span> people have got divorced. Being single doesn't look so bad now does it?</p>
-
-<p><span id="hiv">1</span> people have been diagnosed with HIV. Wear a condom, dickhead.</p>
-
-<p>Justin Bieber has gained <span id="justin">0</span> followers. Don't you wish someone loved <strong>you</strong> that much?</p>
-
-@include('_app')
+</body>
+</html>
