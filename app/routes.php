@@ -1,5 +1,6 @@
 <?php
 
+// App::bind('ThirdWorldProblems\IWeather', 'ThirdWorldProblems\WeatherMapWeather');
 App::bind('ThirdWorldProblems\IWeather', 'ThirdWorldProblems\FakeWeather');
 
 /*
@@ -13,7 +14,24 @@ App::bind('ThirdWorldProblems\IWeather', 'ThirdWorldProblems\FakeWeather');
 |
 */
 
+Route::get('/data', function()
+{
+	return [
+		App::make('ThirdWorldProblems\IWeather')->weatherInLocation('London'), // ['lat' => x, 'lng' => x] or just city name
+		App::make('ThirdWorldProblems\Morbid')->one(),
+	];
+});
+
 Route::get('/', function()
 {
-	return App::make('ThirdWorldProblems\IWeather')->weatherInLocation('Foo');
+	return View::make('home');
+});
+
+Route::post('/weather', function() {
+	$loc = [
+		'lat' => Input::get('lat'),
+		'lng' => Input::get('lng'),
+	];
+
+	return App::make('ThirdWorldProblems\IWeather')->weatherInLocation($loc);
 });
