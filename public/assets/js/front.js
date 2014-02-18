@@ -30,6 +30,9 @@ $(function() {
 			runFred();
 			runDe();
 			fixHeights();
+			setTimeout(function() {
+				$('.get-a-grip-overlay').addClass('visible');
+			}, 26700);
 		}
 	});
 
@@ -123,10 +126,4 @@ $(function() {
 			$(this).height(height);
 		});
 	};
-
-	setTimeout(function() {
-		$('.get-a-grip-overlay').addClass('visible');
-	}, 30000);
-
-
 });
