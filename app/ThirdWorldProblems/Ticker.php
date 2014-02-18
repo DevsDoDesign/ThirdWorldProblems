@@ -22,7 +22,7 @@ class Ticker {
 			'tags' => ['fred', 'money', 'rich']
 		],
 		[
-			'el' => '<div class="block-card"><h1 class="card-intro">Since you\'ve been reading, this many people have got divorced</h1><p class="card-counter" id="divorce">1</p><h1 class="card-insult">Being single doesn\' look so bad now does it?</h1></div>',
+			'el' => '<div class="block-card"><h1 class="card-intro">Since you\'ve been reading, this many people have got divorced</h1><p class="card-counter" id="divorce">1</p><h1 class="card-insult">Being single doesn\'t look so bad now does it?</h1></div>',
 			'increment' => 0.2,
 			'interval' => 1300,
 			'tags' => ['divorce']
