@@ -6,6 +6,7 @@
 $dark: #1C1F26;
 $light: #B4C5CE;
 
+$background: #2A5D76;
 
 $warning: #7ABA57;
 
@@ -31,6 +32,7 @@ section {
 	padding: 10px;
 	border-radius: 3px;
 }
+
 
 .hero {
 	padding: 30px;
@@ -127,17 +129,83 @@ textarea {
 
 
 
+.submitted-quote {
+	font-size: 24px;
+}
+
+.block-submitted {
+	margin: 30px 0 0 0;
+	background-color: #D2DADD;
+	padding: 10px;
+	border-radius: 3px;
+}
 
 
 
+.block-card {
+	width: 32.8%;
+	display: inline-block;
+	background-color: darken(#2A5D76, 10%);
+	border-radius: 3px;
+	overflow: hidden;
+	border: 1px solid darken(#2A5D76, 15%);
+}
+
+.card-intro {
+	font-size: 14px;
+	padding: 20px;
+	line-height: 1.5;
+}
+
+.card-counter {
+	text-align: center;
+	font-size: 34px;
+	font-weight: bold;
+	padding: 10px;
+	background: #76b852;
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#87c168),color-stop(100%,#76b852));
+	background: -webkit-linear-gradient(top,#87c168 0,#76b852 100%);
+	background: -ms-linear-gradient(top,#87c168 0,#76b852 100%);
+	background: linear-gradient(top,#87c168 0,#76b852 100%);
+	color: white;
+}
+
+.card-insult { 
+	padding: 20px;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.block-news-headline {
+	margin: 10px 0;
+	background-color: #D2DADD;
+	h2 {
+		text-align: center;
+		padding: 20px 0 0 0;
+		font-size: 22px;
+		font-weight: bold;
+	}
+	p {
+		padding: 20px;	
+	}
+}
 
 
-
-
-
-
-
-
+.death-count {
+	margin-top: 10px;
+	text-align: center;
+	background: #CC6666;
+	padding: 20px;
+	border-radius: 3px;
+	color: white;
+	border: 1px solid darken(#CC6666, 10%);
+	span {
+		font-size: 70px;
+		display: block;
+		padding: 10px;
+		font-weight: bold;
+	}
+}
 
 
 
