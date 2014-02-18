@@ -54,7 +54,7 @@
 				<div class="block-card block-card-first">
 					<h1 class="card-intro"><%= ticker.beforeText %></h1>
 					<p class="card-counter" id="<%= ticker.id %>">1</p>
-					<h1 class="card-insult"><%= ticker.afterText %></h1>
+					<h1 class="card-insult" style="min-height: 76px;"><%= ticker.afterText %></h1>
 				</div>
 			<% }); %>
 
