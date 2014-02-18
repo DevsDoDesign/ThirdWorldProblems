@@ -1,0 +1,7 @@
+$(function() {
+	
+	$('textarea').autogrow({
+
+	});
+
+});

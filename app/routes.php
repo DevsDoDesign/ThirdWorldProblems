@@ -27,6 +27,11 @@ Route::get('/', function()
 	return View::make('home');
 });
 
+Route::get('/tickers', function()
+{
+	return View::make('tickers');
+});
+
 Route::post('/weather', function() {
 	$loc = [
 		'lat' => Input::get('lat'),
