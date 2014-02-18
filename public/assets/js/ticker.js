@@ -42,7 +42,7 @@ var runJustin = function() {
 		$justin.text(justin);
 	};
 	setInterval(ticker, 2000);
-});
+};
 
 var runFred = function() {
 	var made = 0, $oprah = $('#fred');
