@@ -29,6 +29,7 @@ $(function() {
 			runJustin();
 			runFred();
 			runDe();
+			fixHeights();
 		}
 	});
 
@@ -65,7 +66,7 @@ $(function() {
 			category: category,
 			weather: window.TheWeather,
 			tickers: foundTickers,
-			headline: Morbid[_.random(0, 6)]
+			headline: Morbid[_.random(0, 5)]
 		};
 
 		var view = new BackView();
@@ -95,6 +96,16 @@ $(function() {
 
 		outData(sendItToTheSweatshop);
 	});
+
+	var fixHeights = function() {
+		var height = 0;
+		$('.block-card-first .card-intro').each(function() {
+			height = $(this).height() > height ? $(this).height() : height;
+		});
+		$('.block-card-first .card-intro').each(function() {
+			$(this).height(height);
+		});
+	};
 
 
 });

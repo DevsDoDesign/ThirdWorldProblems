@@ -43,14 +43,21 @@
 				</div> 
 			</div>
 		</div>
-		<div class="block-news-headline">
-			<a href="<%= headline.url %>" style="color: black; text-decoration: none;"><h2><%= headline.head %></h2></a>
-			<br><br>
+		<div class="center">
+			<h1 class="since-you-clicked-this">Since you added your problem</h1>
+		</div>
+		<div class="block-news-headline" style="background:#463E35;">
+			<h2 class="block-news-headline-title"><a href="<%= headline.url %>" style="color: #fff; text-decoration: none;"><%= headline.head %></a></h2>
 		</div>
 		<div class="block-cards">
 			<% _.each(tickers, function(ticker) { %>
-				<%= ticker.el %>
+				<div class="block-card block-card-first">
+					<h1 class="card-intro"><%= ticker.beforeText %></h1>
+					<p class="card-counter" id="<%= ticker.id %>">1</p>
+					<h1 class="card-insult"><%= ticker.afterText %></h1>
+				</div>
 			<% }); %>
+
 		</div>
 		<div class="death-count">
 			<p>By the way<span id="deaths">1</span> people have died whilst you have been reading this</p>
