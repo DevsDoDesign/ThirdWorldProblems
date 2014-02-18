@@ -53,7 +53,7 @@
 			<% }); %>
 		</div>
 		<div class="death-count">
-			<p>By the way<span>24</span> people have died whilst you have been reading this</p>
+			<p>By the way<span id="deaths">1</span> people have died whilst you have been reading this</p>
 		</div>
 	</script>
 
