@@ -44,8 +44,8 @@
 			</div>
 		</div>
 		<div class="block-news-headline">
-			<h2>Killer eats monkey on top of eiffel tower</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, dolores, minus perspiciatis suscipit harum quam ipsum omnis quos obcaecati tempore dignissimos aperiam facere dicta dolor fuga et dolorem eaque facilis.</p>
+			<a href="<%= headline.url %>" style="color: black; text-decoration: none;"><h2><%= headline.head %></h2></a>
+			<br><br>
 		</div>
 		<div class="block-cards">
 			<% _.each(tickers, function(ticker) { %>

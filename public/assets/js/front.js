@@ -12,7 +12,8 @@ $(function() {
 				problem: data.text,
 				weather: data.weather,
 				category: data.category ? data.category.name : null,
-				tickers: data.tickers
+				tickers: data.tickers,
+				headline: data.headline
 			});
 		},
 		render: function(data) {
@@ -57,7 +58,8 @@ $(function() {
 			text: text,
 			category: category,
 			weather: window.TheWeather,
-			tickers: foundTickers
+			tickers: foundTickers,
+			headline: Morbid[_.random(0, 6)]
 		};
 
 		var view = new BackView();
