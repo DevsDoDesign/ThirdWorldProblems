@@ -70,8 +70,8 @@
 
 		</div>
 		<div class="death-count">
-			<p>People are dying whilst you are bitching about your first world problem</p>
 			<p class="death-count-number" id="deaths">1</p>
+			<p>People have died whilst you've been bitching about your first world problems</p>
 		</div>
 	</script>
 

@@ -245,19 +245,23 @@ textarea {
   border-radius: 3px;
   color: white;
   border: 1px solid #bf4040; }
+  .death-count p:nth-child(2) {
+    padding: 10px 0;
+  }
   .death-count p {
-    width: 25%;
+    text-align: center;
+    /*width: 25%;
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;*/ }
   .death-count .death-count-number {
     font-size: 80px;
     font-weight: bold;
-    margin-left: 10px; }
-  .death-count span {
+    /*margin-left: 10px;*/ }
+ /* .death-count span {
     font-size: 70px;
     display: block;
     padding: 10px;
-    font-weight: bold; }
+    font-weight: bold; }*/
 
 .get-a-grip-overlay {
   position: absolute;
