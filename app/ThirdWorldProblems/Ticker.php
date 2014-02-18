@@ -4,43 +4,43 @@ class Ticker {
 
 	protected $tickers = [
 		[
-			'el' => '<div id="death"><span class="num">0</span> people have died since you read this, you fuckwit.</div>',
+			'el' => '<div class="block-card"><h1 class="card-intro">Since you\'ve been reading, this many people have died</h1><p class="card-counter" id="deaths">1</p><h1 class="card-insult">So shut your fucking moaning, and get on with life!</h1></div>',
 			'increment' => 1,
 			'interval' => 1780,
 			'tags' => ['death']
 		],
 		[
-			'el' => '<div id="oprah">Oprah has made $<span class="num">0</span> since you got here, pauper.</div>',
+			'el' => '<div class="block-card"><h1 class="card-intro">Since you have been here, Oprah has made $</h1><p class="card-counter" id="oprah">1</p><h1 class="card-insult"> since you got here, pauper.</h1></div>',
 			'increment' => 0.9,
 			'interval' => 100,
 			'tags' => ['oprah', 'rich', 'money']
 		],
 		[
-			'el' => '<div id="banks">The guy who caused the banks to crash, Fred the Shred, makes £39 <strong>per minute</strong> on his pension. Thats £<span class="num">0</span> since you loaded the page.</div>',
+			'el' => '<div class="block-card"><h1 class="card-intro">Fred the Shred, makes £39 per minute on his pension. That\'s £</h1><p class="card-counter" id="fred">1</p><h1 class="card-insult"> since you loaded the page</h1></div>',
 			'increment' => 0.065,
 			'interval' => 100,
 			'tags' => ['fred', 'money', 'rich']
 		],
 		[
-			'el' => '<div id="divorce"><span class="num">0</span> people have got divorced. Being single doesn\' look so bad now does it?</div>',
+			'el' => '<div class="block-card"><h1 class="card-intro">Since you\'ve been reading, this many people have got divorced</h1><p class="card-counter" id="divorce">1</p><h1 class="card-insult">Being single doesn\' look so bad now does it?</h1></div>',
 			'increment' => 0.2,
 			'interval' => 1300,
 			'tags' => ['divorce']
 		],
 		[
-			'el' => '<div id="hiv"><span class="num">0</span> people have been diagnosed with HIV. Wear a condom, dickhead.</div>',
+			'el' => '<div class="block-card"><h1 class="card-intro">Since you\'ve been reading, this many people have been diagnosed with HIV</h1><p class="card-counter" id="hiv">1</p><h1 class="card-insult">Wear a condom, dickhead.</h1></div>',
 			'increment' => 1,
 			'interval' => 6600,
 			'tags' => ['hiv', 'sick', 'ill']
 		],
 		[
-			'el' => '<div id="de">Dan Edwards, of Young Designer of the Year fame, has had <span class="num">0</span> spam mentions on Twitter since you got here.</div>',
+			'el' => '<div class="block-card"><h1 class="card-intro">Dan Edwards, Young Designer of the Year has had</h1><p class="card-counter" id="de">1</p><h1 class="card-insult">spam mentions on Twitter since you got here.</h1></div>',
 			'increment' => 1,
 			'interval' => 5000,
 			'tags' => ['de', 'dan', 'design']
 		],
 		[
-			'el' => '<div id="bieber">Justin Bieber has gained <span class="num">0</span> followers. Don\'t you wish someone loved <strong>you</strong> that much?</div>',
+			'el' => '<div class="block-card"><h1 class="card-intro">Justin Beiber has gained this many fans since</h1><p class="card-counter" id="justin">1</p><h1 class="card-insult">Don\'t you wish someone loved you that much?</h1></div>',
 			'increment' => 1,
 			'interval' => 2000,
 			'tags' => ['justin', 'bieber']

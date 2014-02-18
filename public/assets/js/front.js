@@ -11,7 +11,8 @@ $(function() {
 			return _.template(template, {
 				problem: data.text,
 				weather: data.weather,
-				category: data.category ? data.category.name : null
+				category: data.category ? data.category.name : null,
+				tickers: data.tickers
 			});
 		},
 		render: function(data) {
@@ -20,7 +21,7 @@ $(function() {
 			return this;
 		},
 		afterRender: function() {
-			console.debug('foo');
+			// console.debug('foo');
 		}
 	});
 
@@ -46,19 +47,19 @@ $(function() {
 
 	var flipIt = function(text, category) {
 		$wrap.empty();
-		var tickers = [];
-		while(tickers.length < 3) {
-			var random = Math.ceil(Math.random()*5);
-			var found = false;
-			if (tickers.indexOf(random) == -1 && random !== 0) {
-				tickers[tickers.length] = random;
-			}
+		var foundTickers = [];
+		while (_.keys(foundTickers).length < 3) {
+			var random = _.random(1, 5);
+			foundTickers[random] = Tickers[random];
 		}
+
 		var data = {
 			text: text,
 			category: category,
-			weather: window.TheWeather
+			weather: window.TheWeather,
+			tickers: foundTickers
 		};
+
 		var view = new BackView();
 		$wrap.append(view.render(data).el);
 	};
