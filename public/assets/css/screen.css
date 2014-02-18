@@ -40,17 +40,20 @@ table {
 /* Styles */
 body {
   background-color: #1C1F26;
-  background: #2A5D76;
+  background-image: url(/assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  padding-bottom: 20px; }
 
 section {
   max-width: 600px;
   margin: 0 auto; }
 
 .block {
-  margin: 50px 80px;
-  background-color: #D2DADD;
+  margin: 140px 80px;
+  background-color: rgba(222, 236, 249, 0.8);
   padding: 10px;
   border-radius: 3px; }
 
@@ -64,6 +67,7 @@ section {
 .submit-your {
   font-family: georgia;
   color: #111317;
+  color: #463E35;
   font-weight: 300;
   font-size: 32px;
   margin: 5px 0; }
@@ -73,11 +77,13 @@ section {
   font-weight: bold;
   letter-spacing: 10px;
   color: #1C1F26;
+  color: #463E35;
   margin-left: 9px; }
 
 .problem {
   font-family: georgia;
   color: #16181d;
+  color: #463E35;
   font-size: 40px;
   margin: 5px 0;
   font-weight: bold; }
@@ -91,7 +97,7 @@ textarea {
   width: 100%;
   border-radius: 3px;
   border: 1px solid #515759;
-  background-color: #393D3E;
+  background-color: #463E35;
   padding: 10px;
   color: white;
   margin-bottom: 10px; }
@@ -129,66 +135,162 @@ textarea {
     color: #fff;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
 
+.center {
+  text-align: center; }
+
+.since-you-clicked-this {
+  line-height: 1;
+  color: #463E35;
+  font-weight: bold;
+  background-color: #CC6666;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  font-size: 14px;
+  margin-top: 20px; }
+
 .submitted-quote {
   font-size: 24px; }
 
 .block-submitted {
   margin: 30px 0 0 0;
-  background-color: #D2DADD;
+  background-color: #DEECF9;
   padding: 10px;
   border-radius: 3px; }
 
 .block-card {
   width: 32.8%;
   display: inline-block;
-  background-color: #1d4050;
+  background-color: #DEECF9;
   border-radius: 3px;
   overflow: hidden;
-  border: 1px solid #16313e; }
+  color: #262b2e;
+  text-align: center;
+  vertical-align: top; }
 
 .card-intro {
+  padding: 10px 0 35px 0;
+  font-size: 12px;
+  line-height: 1.5;
   font-size: 14px;
-  padding: 20px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: #f4f4f4;
+  font-weight: bold; }
+
+.card-insult {
+  padding: 20px 0;
+  font-size: 12px;
+  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #262b2e; }
 
 .card-counter {
   text-align: center;
-  font-size: 34px;
+  border-radius: 100%;
+  display: inline-block;
+  font-size: 24px;
   font-weight: bold;
-  padding: 10px;
-  background: #76b852;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #87c168), color-stop(100%, #76b852));
-  background: -webkit-linear-gradient(top, #87c168 0, #76b852 100%);
-  background: -ms-linear-gradient(top, #87c168 0, #76b852 100%);
-  background: linear-gradient(top, #87c168 0, #76b852 100%);
+  padding: 17px 17px;
+  margin-top: -34px;
   color: white; }
 
-.card-insult {
-  padding: 20px;
-  font-size: 12px;
-  line-height: 1.5; }
+.block-card-first .card-intro {
+  background-color: #e9b35e;
+  border: 1px solid #e6a748;
+  border-bottom: none; }
+.block-card-first .card-counter {
+  background-color: #e9b35e;
+  border: 1px solid #e6a748;
+  border-bottom: none; }
+
+.block-card-second .card-intro {
+  background-color: #a56fbb;
+  border: 1px solid #9353ae;
+  border-bottom: none; }
+.block-card-second .card-counter {
+  background-color: #a56fbb;
+  border: 1px solid #995eb3;
+  border-bottom: none; }
+
+.block-card-third .card-intro {
+  background-color: #5999c6;
+  border: 1px solid #468fbf;
+  border-bottom: none; }
+.block-card-third .card-counter {
+  background-color: #5999c6;
+  border: 1px solid #468fbf;
+  border-bottom: none; }
 
 .block-news-headline {
-  margin: 10px 0;
-  background-color: #D2DADD; }
+  margin: 0 0 10px 0;
+  background-color: #DEECF9; }
   .block-news-headline h2 {
     text-align: center;
-    padding: 20px 0 0 0;
-    font-size: 22px;
-    font-weight: bold; }
+    color: #F4F4F4;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 3px 3px 0 0;
+    font-weight: bold;
+    background-color: #463E35; }
   .block-news-headline p {
     padding: 20px; }
 
 .death-count {
   margin-top: 10px;
-  text-align: center;
   background: #CC6666;
-  padding: 20px;
+  padding: 5px 20px;
   border-radius: 3px;
   color: white;
   border: 1px solid #bf4040; }
+  .death-count p {
+    width: 25%;
+    display: inline-block;
+    vertical-align: middle; }
+  .death-count .death-count-number {
+    font-size: 80px;
+    font-weight: bold;
+    margin-left: 10px; }
   .death-count span {
     font-size: 70px;
     display: block;
     padding: 10px;
     font-weight: bold; }
+
+.get-a-grip-overlay {
+  position: absolute;
+  z-index: 1000;
+  background-color: #181512;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none; }
+  .get-a-grip-overlay h1 {
+    text-align: center;
+    font-weight: bold; }
+  .get-a-grip-overlay.visible {
+    display: block; }
+
+.projector-container {
+  width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: -150px; }
+  .projector-container h1 {
+    color: #a49485;
+    margin: 20px; }
+  .projector-container span {
+    color: #e82f2f; }
+  .projector-container .people-have-died {
+    font-size: 60px;
+    color: #a49485; }
+  .projector-container .get-a-grip {
+    color: #e82f2f;
+    font-size: 120px; }
