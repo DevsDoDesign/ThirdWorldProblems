@@ -28,7 +28,7 @@ return array(
 	|
 	*/
 
-	'host' => 'smtp.mailgun.org',
+	'host' => 'localhost',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return array(
 	|
 	*/
 
-	'port' => 587,
+	'port' => 1025,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => null, 'name' => null),
+	'from' => array('address' => 'thirdworldproblems@devsdodesign.com', 'name' => 'Third World Problems'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -67,7 +67,7 @@ return array(
 	|
 	*/
 
-	'encryption' => 'tls',
+	'encryption' => null,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -106,7 +106,7 @@ return array(
 	|
 	*/
 
-	'sendmail' => '/usr/sbin/sendmail -bs',
+	'sendmail' => '/usr/bin/env catchmail',
 
 	/*
 	|--------------------------------------------------------------------------
